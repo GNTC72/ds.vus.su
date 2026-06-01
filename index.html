@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="description" content="Цифровая студия ds.vus.su – стратегия, риск-менеджмент, антикризисное управление, разработка ПО, боты, 3D-визуализация. Комплексные решения для бизнеса от ИП Чащин Г.Н.">
 
-  <!-- === ЗАГОЛОВКИ БЕЗОПАСНОСТИ (как в предыдущем решении) === -->
+  <!-- === ЗАГОЛОВКИ БЕЗОПАСНОСТИ === -->
   <meta http-equiv="X-Frame-Options" content="DENY">
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
   <meta http-equiv="Content-Security-Policy" content="
@@ -37,7 +37,7 @@
       color: #0f172a;
       line-height: 1.5;
       scroll-behavior: smooth;
-      padding-top: 80px; /* высота шапки */
+      padding-top: 80px;
       padding-bottom: 70px;
     }
 
@@ -111,12 +111,17 @@
       font-weight: 800;
       color: #0f172a;
       letter-spacing: -0.02em;
+      text-decoration: none;
+      transition: opacity 0.2s;
     }
     .logo span {
       background: linear-gradient(135deg, #1e3a8a, #3b82f6);
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
+    }
+    .logo:hover {
+      opacity: 0.8;
     }
 
     .nav-links {
@@ -287,7 +292,7 @@
       margin-top: 0.5rem;
     }
 
-    /* advantages (краткие выгоды) */
+    /* advantages */
     .advantages-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -313,7 +318,7 @@
       margin-bottom: 1rem;
     }
 
-    /* услуги (сетка) */
+    /* услуги */
     .services-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -369,7 +374,6 @@
       margin-bottom: 0.6rem;
     }
 
-    /* about студии */
     .studio-text {
       max-width: 800px;
       margin-bottom: 2rem;
@@ -419,7 +423,7 @@
 
 <header class="header">
   <div class="container nav-bar">
-    <div class="logo">ds.<span>vus.su</span></div>
+    <a href="#home" class="logo">ds.<span>vus.su</span></a>
     <ul class="nav-links">
       <li><a href="#home">Главная</a></li>
       <li><a href="#studio">О студии</a></li>
@@ -429,10 +433,10 @@
   </div>
 </header>
 
-<!-- Нижняя панель контактов (фикс) -->
+<!-- Нижняя панель контактов (email обновлён) -->
 <div class="bottom-contact-bar">
   <a href="tel:+79324846044"><i class="fas fa-phone-alt"></i> +7-932-484-60-44</a>
-  <a href="mailto:i1.ip.gn@mail.ru"><i class="fas fa-envelope"></i> i1.ip.gn@mail.ru</a>
+  <a href="mailto:ds.vus.su@mail.ru"><i class="fas fa-envelope"></i> ds.vus.su@mail.ru</a>
   <a href="https://t.me/G_Nikolaevich" target="_blank" rel="noopener noreferrer"><i class="fab fa-telegram"></i> @G_Nikolaevich</a>
   <a href="https://wa.me/79324846044" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> WhatsApp</a>
 </div>
@@ -451,7 +455,7 @@
     </div>
   </section>
 
-  <!-- Краткие преимущества -->
+  <!-- О студии -->
   <section id="studio">
     <div class="container">
       <h2>Цифровая студия ds.vus.su</h2>
@@ -479,79 +483,35 @@
     </div>
   </section>
 
-  <!-- Услуги (расширенный список) -->
+  <!-- Услуги -->
   <section id="services">
     <div class="container">
       <h2>Наши услуги</h2>
       <p class="section-sub">Комплексный подход – от стратегии до цифровых продуктов</p>
       <div class="services-grid">
-        <div class="service-card">
-          <div class="service-icon"><i class="fas fa-chart-pie"></i></div>
-          <h3>Стратегия развития предприятия</h3>
-          <div class="service-desc">Анализ рынка, формирование долгосрочной стратегии, дорожная карта, KPI, сценарии роста.</div>
-        </div>
-        <div class="service-card">
-          <div class="service-icon"><i class="fas fa-exclamation-triangle"></i></div>
-          <h3>Риск-менеджмент</h3>
-          <div class="service-desc">Идентификация, оценка и управление рисками (финансовыми, операционными, репутационными). Создание системы риск-контроля.</div>
-        </div>
-        <div class="service-card">
-          <div class="service-icon"><i class="fas fa-biohazard"></i></div>
-          <h3>Антикризисное управление</h3>
-          <div class="service-desc">Диагностика кризисной ситуации, разработка плана выхода, оптимизация затрат, реструктуризация.</div>
-        </div>
-        <div class="service-card">
-          <div class="service-icon"><i class="fas fa-handshake"></i></div>
-          <h3>Сопровождение продаж</h3>
-          <div class="service-desc">Воронки, скрипты, обучение отдела продаж, CRM-интеграция, повышение конверсии.</div>
-        </div>
-        <div class="service-card">
-          <div class="service-icon"><i class="fas fa-chart-simple"></i></div>
-          <h3>Аналитика бизнес-процессов</h3>
-          <div class="service-desc">Аудит, выявление узких мест, регламентация, внедрение систем сбалансированных показателей.</div>
-        </div>
-        <div class="service-card">
-          <div class="service-icon"><i class="fas fa-code"></i></div>
-          <h3>Разработка ПО</h3>
-          <div class="service-desc">Веб-приложения, CRM/ERP, телеграм-боты, мобильные приложения, интеграции с API.</div>
-        </div>
-        <div class="service-card">
-          <div class="service-icon"><i class="fas fa-robot"></i></div>
-          <h3>Разработка ботов</h3>
-          <div class="service-desc">Чат-боты для Telegram, WhatsApp, сайтов. Автоматизация поддержки, продаж, уведомлений.</div>
-        </div>
-        <div class="service-card">
-          <div class="service-icon"><i class="fas fa-cube"></i></div>
-          <h3>Визуализация и 3D</h3>
-          <div class="service-desc">3D-моделирование, визуализация продукции, архитектурная визуализация, интерактивные презентации.</div>
-        </div>
-        <div class="service-card">
-          <div class="service-icon"><i class="fas fa-bullhorn"></i></div>
-          <h3>Автоматизация маркетинга</h3>
-          <div class="service-desc">Настройка сквозной аналитики, автоматизация email/SMS-рассылок, ведение рекламных кампаний.</div>
-        </div>
-        <div class="service-card">
-          <div class="service-icon"><i class="fas fa-chalkboard-user"></i></div>
-          <h3>Обучение персонала</h3>
-          <div class="service-desc">Тренинги по управлению, продажам, работе с CRM, цифровым инструментам.</div>
-        </div>
-        <div class="service-card">
-          <div class="service-icon"><i class="fas fa-cloud-upload-alt"></i></div>
-          <h3>DevOps и поддержка</h3>
-          <div class="service-desc">Настройка CI/CD, облачная инфраструктура, мониторинг, техподдержка 24/7.</div>
-        </div>
+        <div class="service-card"><div class="service-icon"><i class="fas fa-chart-pie"></i></div><h3>Стратегия развития предприятия</h3><div class="service-desc">Анализ рынка, формирование долгосрочной стратегии, дорожная карта, KPI, сценарии роста.</div></div>
+        <div class="service-card"><div class="service-icon"><i class="fas fa-exclamation-triangle"></i></div><h3>Риск-менеджмент</h3><div class="service-desc">Идентификация, оценка и управление рисками (финансовыми, операционными, репутационными). Создание системы риск-контроля.</div></div>
+        <div class="service-card"><div class="service-icon"><i class="fas fa-biohazard"></i></div><h3>Антикризисное управление</h3><div class="service-desc">Диагностика кризисной ситуации, разработка плана выхода, оптимизация затрат, реструктуризация.</div></div>
+        <div class="service-card"><div class="service-icon"><i class="fas fa-handshake"></i></div><h3>Сопровождение продаж</h3><div class="service-desc">Воронки, скрипты, обучение отдела продаж, CRM-интеграция, повышение конверсии.</div></div>
+        <div class="service-card"><div class="service-icon"><i class="fas fa-chart-simple"></i></div><h3>Аналитика бизнес-процессов</h3><div class="service-desc">Аудит, выявление узких мест, регламентация, внедрение систем сбалансированных показателей.</div></div>
+        <div class="service-card"><div class="service-icon"><i class="fas fa-code"></i></div><h3>Разработка ПО</h3><div class="service-desc">Веб-приложения, CRM/ERP, телеграм-боты, мобильные приложения, интеграции с API.</div></div>
+        <div class="service-card"><div class="service-icon"><i class="fas fa-robot"></i></div><h3>Разработка ботов</h3><div class="service-desc">Чат-боты для Telegram, WhatsApp, сайтов. Автоматизация поддержки, продаж, уведомлений.</div></div>
+        <div class="service-card"><div class="service-icon"><i class="fas fa-cube"></i></div><h3>Визуализация и 3D</h3><div class="service-desc">3D-моделирование, визуализация продукции, архитектурная визуализация, интерактивные презентации.</div></div>
+        <div class="service-card"><div class="service-icon"><i class="fas fa-bullhorn"></i></div><h3>Автоматизация маркетинга</h3><div class="service-desc">Настройка сквозной аналитики, автоматизация email/SMS-рассылок, ведение рекламных кампаний.</div></div>
+        <div class="service-card"><div class="service-icon"><i class="fas fa-chalkboard-user"></i></div><h3>Обучение персонала</h3><div class="service-desc">Тренинги по управлению, продажам, работе с CRM, цифровым инструментам.</div></div>
+        <div class="service-card"><div class="service-icon"><i class="fas fa-cloud-upload-alt"></i></div><h3>DevOps и поддержка</h3><div class="service-desc">Настройка CI/CD, облачная инфраструктура, мониторинг, техподдержка 24/7.</div></div>
       </div>
     </div>
   </section>
 
-  <!-- Контакты -->
+  <!-- Контакты (основная секция) -->
   <section id="contact">
     <div class="container">
       <h2>Свяжитесь с нами</h2>
       <p class="section-sub">Обсудим ваш проект, проведём бесплатный первичный анализ</p>
       <div class="contact-cards">
         <div class="contact-item"><i class="fas fa-phone-alt"></i><h4>Телефон</h4><a href="tel:+79324846044">+7-932-484-60-44</a></div>
-        <div class="contact-item"><i class="fas fa-envelope"></i><h4>Эл. почта</h4><a href="mailto:i1.ip.gn@mail.ru">i1.ip.gn@mail.ru</a></div>
+        <div class="contact-item"><i class="fas fa-envelope"></i><h4>Эл. почта</h4><a href="mailto:ds.vus.su@mail.ru">ds.vus.su@mail.ru</a></div>
         <div class="contact-item"><i class="fab fa-telegram"></i><h4>Telegram</h4><a href="https://t.me/G_Nikolaevich" target="_blank" rel="noopener noreferrer">@G_Nikolaevich</a></div>
         <div class="contact-item"><i class="fab fa-whatsapp"></i><h4>WhatsApp</h4><a href="https://wa.me/79324846044" target="_blank" rel="noopener noreferrer">Написать в WhatsApp</a></div>
       </div>
@@ -587,7 +547,6 @@
     });
   }
 
-  // подсветка меню
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-links a');
   function setActive() {
